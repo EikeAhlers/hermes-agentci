@@ -1,0 +1,12 @@
+name: agentci
+version: "0.1.0"
+description: "Agent CI — write tests for your agent, not just your code. Runs prompt cases in throwaway workspaces, reads the real session record (tokens, tools, files) and fails the build when behaviour regresses."
+author: Eike Ahlers
+kind: standalone
+requires_hermes: ">=0.20.2"
+provides_tools:
+  - agentci_run
+  - agentci_matrix
+  - agentci_report
+  - agentci_init
+provides_hooks: []
